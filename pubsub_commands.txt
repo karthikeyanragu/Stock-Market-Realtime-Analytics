@@ -1,0 +1,8 @@
+Create topic in Cloud PubSub
+
+gcloud pubsub topics create stock_streaming
+
+Create a subscriber and subscribe to topic
+
+gcloud pubsub subscriptions create stock_subscriber --topic=stock_streaming
+
