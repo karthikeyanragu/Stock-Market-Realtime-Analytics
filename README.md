@@ -24,7 +24,7 @@ Bigquery is a serverless centralized datawarehouse to store,manipulated data. It
 Power BI is a unified, scalable platform for self-service and enterprise business intelligence (BI). Connect to and visualize any data.
 
 
-
+# Process involved
 I created a streaming pipeline to fetch data in real-time from Alpha Vantage API to transform data to JSON format which can be readily inserted to Bigquery, then publish it to Pub Sub topic.
 
 Once the stream flows to the topic, it consumed, loaded to Bigquery and the message is acknowledged. On top of my table is view is created. The stream of data in my view is connected live to Bigquery view above which dashboard is created where data is visualized and analytics is performed. Also had an idea of using Looker, but couldn't use in free trial.
